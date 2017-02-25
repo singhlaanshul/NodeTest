@@ -1,0 +1,38 @@
+<!DOCTYPE HTML>
+<html>
+  <body>
+    <script src="https://static.opentok.com/v2/js/opentok.min.js" charset="utf-8"></script>
+	<script src="https://code.jquery.com/jquery-3.1.0.min.js"></script>
+	<!--[if lte IE 9]>
+		<script src="scripts/IE9.js"></script>
+		<![endif]-->
+	<script type="text/javascript" src="app.js"></script>
+	
+    <script type='text/javascript'>    
+    
+    </script>
+  </body>
+	
+	<div style="text-align: center;">
+		<h4>Hello, Welcome</h4>
+				
+		<button onclick="getSession()"> Connect with TokBox </button> <br></br>
+		<button onclick="startArchive()"> Start Archive </button> <br></br>
+		<button onclick="stopArchive()"> Stop Archive </button> <br></br>
+		<button onclick="publish()"> Publish </button> <br></br>
+		
+		<button onclick="unPublish()"> UnPublish </button> <br></br>
+		<button onclick="unSubscribe()"> UnSubscribe </button> <br></br>
+		<button onclick="subscribeAgain()"> Subscribe Again to the Publisher Stream </button> <br></br>
+		<button onclick="disconnectFromSession()"> Disconnect from Session </button> <br></br>
+		
+		<button onclick="takePicture()"> Take Picture </button> <br></br>
+		<h5>Session Id: </h5><div id="sessionId"></div>
+		<h5>Token Id: </h5><div id="tokenId"></div>
+		
+		<div id="publisherContainer" style="width:100px height:70px"></div>
+		<div id="subscriberContainer" style="width:100px height:70px"></div>
+		<div id="subscriberMeter"></div>	
+			
+    </div>
+</html>

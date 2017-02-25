@@ -1,0 +1,21 @@
+<html>
+<body>
+	<script type="text/javascript" src="screenShareAppJs.js"></script>
+	<script src="https://static.opentok.com/v2/js/opentok.min.js" charset="utf-8"></script>
+	<script src="https://code.jquery.com/jquery-3.1.0.min.js"></script>
+	
+  <button onclick="getSession()">Get Session Id</button> <br></br>
+  <button onclick="initializeScreenSharingSessionForChrome()"> Establish Connection </button> <br></br>
+  
+  <button onclick="javascript:screenshare();" disabled id="shareBtn">Share your screen</button></br></br>
+  <button onclick="stopScreenShare()"> Stop Screen Sharing </button> <br><br>
+  
+  <h4>Session Id: </h4><div id="sessionId"></div>
+  <h4>Token Id: </h4><div id="tokenId"></div>
+  <div id="camera-publisher"></div></br>
+  <div id="camera-subscriber"></div></br>
+  <div id="screen-subscriber"></div></br>
+  
+
+</body>
+</html>
